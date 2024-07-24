@@ -1,0 +1,142 @@
+<!-- 
+  An Introduction to HTML
+  by Sakib Rasul
+  Created June 24, 2024
+
+  Core Deliverables
+  1. Write a preamble to specify this document's type as an HTML webpage.
+  2. Write an <html> element consisting of a <head> and <body>.
+  3. Use Live Server to view this webpage in a browser.
+  4. Link this document to a stylesheet, and make this webpage prettier! 
+-->
+<!-- a preamble to let our browser know that we are writing standard html-->
+<!-- a document type tab --><!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nanyi Deng - Resume</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              margin: 20px;
+          }
+          h1, h2, h3 {
+              color: #333;
+          }
+          .contact-info {
+              margin-bottom: 20px;
+          }
+          .contact-info p {
+              margin: 5px 0;
+              display: inline-block;
+              margin-right: 20px;
+          }
+          .section {
+              margin-bottom: 20px;
+          }
+          .section-title {
+              font-size: 1.2em;
+              border-bottom: 2px solid #333;
+              margin-bottom: 10px;
+              padding-bottom: 5px;
+          }
+          .job-title, .education-title {
+              font-weight: bold;
+              display: inline-block;
+              width: 60%;
+          }
+          .company-location, .education-location {
+              font-style: italic;
+              display: inline-block;
+              width: 35%;
+              text-align: right;
+          }
+          .experience-item, .education-item {
+              margin-bottom: 10px;
+          }
+          ul {
+              margin: 0;
+              padding-left: 20px;
+          }
+      </style>
+  </head>
+  <body>
+      <header>
+          <h1>NANYI DENG</h1>
+          <div class="contact-info">
+              <p>Email: <a href="mailto:nanyidengcareer@gmail.com">nanyidengcareer@gmail.com</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/nanyideng/">https://www.linkedin.com/in/nanyideng/</a></p>
+              <p>Phone: +1 (646) 287-3695</p>
+          </div>
+      </header>
+  
+      <section class="section">
+          <h2 class="section-title">SKILLS</h2>
+          <p><strong>Technical:</strong> Python, R, C++, SQL, TensorFlow, PyTorch, Hive, Git, Google Analytics, Google Cloud Platform</p>
+          <p><strong>Analytics:</strong> Data Analysis & Visualization, Statistical & Predictive Modeling, Machine Learning, Deep Learning, Natural Language Processing, Causal Inference, Hypothesis Testing, Experimentation Design</p>
+      </section>
+  
+      <section class="section">
+          <h2 class="section-title">EDUCATION</h2>
+          <div class="education-item">
+              <p><span class="education-title">Doctor of Philosophy (Social Work, Dissertation Topic: CyberPrivacy) - Fordham University (NY, NY)</span><span class="education-location">Expected: 09/2025</span></p>
+          </div>
+          <div class="education-item">
+              <p><span class="education-title">Master of Science (Information Science and Technology) - Columbia University (NY, NY)</span><span class="education-location">05/2021</span></p>
+          </div>
+          <div class="education-item">
+              <p><span class="education-title">Bachelor of Art (Psychology) - University of Kansas (Lawrence, KS)</span><span class="education-location">12/2016</span></p>
+          </div>
+      </section>
+  
+      <section class="section">
+          <h2 class="section-title">WORK EXPERIENCES</h2>
+          <div class="experience-item">
+              <p><span class="job-title">Data Scientist (VR Team) | Meta | NEW YORK, NY</span><span class="company-location">05/2022 – Present</span></p>
+              <ul>
+                  <li>Utilized Python libraries such as NumPy, Pandas, and Scikit-learn in conjunction with Jupyter Notebook, crafted advanced Monte Carlo simulations. This strategic deployment streamlined the monitoring process, achieving a 15% boost in efficiency for sampling a user base of 1 million within a 1.5-hour window.</li>
+                  <li>Leveraged TensorFlow and PyTorch for developing and refining ARIMA time series forecasting models, resulting in a commendable enhancement of +2.3 AUC. This optimization led to a 20% increase in power conservation for Meta Quest Pro.</li>
+                  <li>Implemented a robust data pipeline using PySpark and stored results in Hive. This architecture was pivotal in constructing mathematical models that elevated the accuracy of power consumption predictions by 18% across diverse VR products.</li>
+                  <li>Conducted deep dives into analytical research, harnessing the capabilities of Seaborn and Tableau for data visualization. This approach led to a 25% improvement in stakeholder understanding and strategic decision-making.</li>
+                  <li>Collaborated within a Git environment and utilized tools like VS Code and PyCharm, facilitated a multidisciplinary teamwork setting. This resulted in a 10% acceleration in research implementation and delivery.</li>
+                  <li>Presented research findings using interactive dashboards on GCP, culminating in a 12% increase in stakeholder engagement and feedback.</li>
+              </ul>
+          </div>
+  
+          <div class="experience-item">
+              <p><span class="job-title">Researcher (Department of Social Services) | FORDHAM UNIVERSITY | NEW YORK, NY</span><span class="company-location">08/2021 – 04/2022</span></p>
+              <ul>
+                  <li>Orchestrated surveys employing Qualtrics and analyzed the gathered data with Python and SPSS. Through statistical paradigms like ANOVA in R, ensured hypothesis validation that led to a 17% boost in the clarity of research outcomes.</li>
+                  <li>Transformed raw data using Pandas and visualized insights via GGPlot, which resulted in a 14% up in the effective communication of results to university administrators.</li>
+                  <li>Leveraged HTML/CSS and JavaScript to develop interactive platforms for data collection, yielding a 20% rise in participant engagement.</li>
+                  <li>Employed advanced data collection methodologies, such as real-time data validation, adaptive questionnaire flows, and automated error-correction mechanisms. This proactive approach mitigated inaccuracies, reduced manual oversight, and streamlined the data acquisition process, resulting in a 20% improvement in data quality and consistency.</li>
+                  <li>Integrated Google Colab for scalable data processing, which facilitated a 10% enhancement in data processing speed and efficiency.</li>
+              </ul>
+          </div>
+      </section>
+  
+      <section class="section">
+          <h2 class="section-title">PROJECTS</h2>
+          <div class="experience-item">
+              <p class="job-title">Airbnb Rental Price Prediction</p>
+              <ul>
+                  <li>Participated in a Kaggle machine learning competition and achieved a top 20% ranking.</li>
+                  <li>Executed meticulous data preprocessing using Python (Pandas) and performed advanced feature engineering to discern critical attributes, leading to a 15% enhancement in model interpretability and data relevance.</li>
+                  <li>Throughout the project, a variety of machine learning methodologies (Linear Regression, Random Forest, SNN (Spiking Neural Networks), XGBoost, LightGBM, and Deep Learning techniques) were explored to predict Airbnb housing prices for 2020.</li>
+                  <li>Recognizing the strengths of individual models, an ensemble approach was adopted, combining the predictive power of XGBoost, LightGBM, and a PyTorch-based Deep Learning model. This strategy leveraged the strengths of each algorithm, optimizing for both bias and variance.</li>
+                  <li>The final ensemble model showcased a remarkable performance, achieving an AUC ROC of 79% and a MAE reduction of 12%, solidifying its predictive precision and reliability.</li>
+              </ul>
+          </div>
+          <div class="experience-item">
+              <p class="job-title">Research</p>
+              <ul>
+                  <li><a href="https://pubmed.ncbi.nlm.nih.gov/32604586/">Application of Social Network Analysis of COVID-19 Related Tweets Mentioning Cannabis and Opioids to Gain Insights for Drug Abuse Research</a></li>
+                  <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.jsoftware.us/vol16/447-JSW15475.pdf">Applying Statistical Machine Learning Methods to Analyze Differences in the Severity Level of COVID-19 among Countries</a></li>
+              </ul>
+          </div>
+      </section>
+  </body>
+  </html>
+  
